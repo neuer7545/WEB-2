@@ -16,12 +16,13 @@
     <!-- 제목 -->
     <title> 연습 1 ( 반응형 디자인 ) </title>
     <style media="screen">
-      div{
+    /* CSS */
+      .abc{
         border:10px solid green;
         font-size:60px;
       }
       @media(max-width:800px){
-        div{
+        .abc{
           display:none;
         }
       }
@@ -49,12 +50,13 @@
         <!-- 본문 -->
         <h2> 연습 1 ( 반응형 디자인 ) </h2>
       </p>
-  <div>
+  <div class="abc">
     Responsive
   </div>
 </ol>
       <!-- 댓글 -->
       <p>
+        <div id="disqus_thread"></div>
         <script>
         /**
         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
