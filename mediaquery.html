@@ -16,20 +16,23 @@
     <!-- 제목 -->
     <title> 연습 1 (반응형 디자인) </title>
     <style media="screen">
-    /* CSS */
+    /* class abc에 대해 꾸민다 (CSS) */
       .abc{
         border:10px solid green;
         padding: 10px;
         font-size:40px;
       }
+      /* 화면 크기가 800px 이하일때 보인다 */
       @media(max-width:800px){
         .abc{
           display:none;
         }
       }
     </style>
+    <!-- CSS로 연결한다 -->
       <link rel="stylesheet" href="style.css">
   </head>
+  <!-- 몸 -->
   <body>
     <!-- 목록 -->
     <h1>
@@ -48,8 +51,9 @@
       </ol>
       <ol>
       <p>
-        <!-- 본문 -->
+        <!-- 제목 -->
         <h2> 연습 1 ( 반응형 디자인 ) </h2>
+        <!-- 본문 -->
       </p>
   <div class="abc">
     화면이 크기가 800px이상이어야 보입니다
