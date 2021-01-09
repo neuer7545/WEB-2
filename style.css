@@ -1,0 +1,33 @@
+      a:link{
+    color: #228B22;
+    text-decoration-line: none;
+  }
+
+  a:visited{
+    color:#9D71BD ;
+    text-decoration-line: none;
+  }
+
+  a:hover{
+    color: #8CBDED;
+    font-size: 1.5em;
+    /*
+    border: 10px dotted #228B22;
+    padding: 10px;
+    박스 만들기
+    */
+
+    text-decoration-line: none;
+  }
+  h1{
+    font-size: 60px;
+    text-align: center;
+  }
+  .b{
+    color: gray;
+    text-decoration-line: none;
+  }
+  /* selector하고 부른다 .은 class #은 id이다 */
+  .c{
+    color: #228B22;
+  }
