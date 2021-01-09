@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <title></title>
     <style>
+    #grid{
+        border:5px solid pink;
+        display:grid;
+        grid-template-columns: 150px 1fr;}
       /*
       block level element
       */
-      h1, a{
-        border:5px solid #123456;
-        text-align: center;
-        pading:20px;
-        margin:20px;
-        width:100px;
+      div{
+        border:5px solid gray;
+      }
       }
     </style>
       <link rel="stylesheet" href="style.css">
@@ -33,10 +34,10 @@
         </li>
       </ol>
       <ol>
-    <h1> CSS </h1>
-    <h1> CSS </h1>
-    Cascading Style Sheets (<a
-    href="https://en.wikipedia.org/wiki/Cascading Style Sheets">CSS</a>) is a style sheet language
+        <div id=grid>
+    <div> CSS </div>
+    <div>Cascading Style Sheets (<a
+    href="https://en.wikipedia.org/wiki/Cascading Style Sheets" class="abc">CSS</a>) is a style sheet language
     used for describing the presentation of a document written
     in a markup language.[1] Although most often used to set the
     visual style of web pages and user interfaces written in HTML
@@ -45,6 +46,7 @@
     in speech, or on other media. Along with HTML and JavaScript,
     CSS is a cornerstone technology used by most websites to create
     visually engaging webpages, user interfaces for web applications,
-    and user interfaces for many mobile applications.
+    and user interfaces for many mobile applications.</div>
+  </div>
   </body>
 </html>
