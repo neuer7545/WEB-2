@@ -5,7 +5,7 @@
   <!--머리 -->
   <head>
     <!-- 제목-->
-    <title>CSS</title>
+    <title> 연습 3 (반응형 웹사이트) </title>
     <!-- utf-8 -->
     <meta charset="utf-8">
     <!-- 구글 애널리틱스 -->
@@ -20,12 +20,56 @@ gtag('config', 'G-C6EBZNRGFE');
 </script>
 <!-- CSS와 연결한다 -->
       <link rel="stylesheet" href="style.css">
+      <style>
+      body{
+        margin:0;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h2 {
+        font-size:45px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+      }
+      ol{
+        border-right:1px solid gray;
+        width:110px;
+        margin:0;
+        padding:20px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol{
+        padding-left:33px;
+      }
+      #grid #article{
+        padding-left:25px;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+        ol{
+          border-right:none;
+        }
+        h2 {
+          border-bottom:none;
+        }
+      }
+      </style>
       <!-- google ads -->
     <script data-ad-client="ca-pub-7449932073592374" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   </head>
       <!-- 몸 -->
       <body>
           <h1><a href="index.html"> WEB </a></h1>
+          <div id="grid">
           <!-- 목록 -->
           <ol>
             <li><a href="CSS-1.html"> HTML </a>
@@ -38,12 +82,13 @@ gtag('config', 'G-C6EBZNRGFE');
             </li>
             <li><a href="box.html"> 연습 2 ( 표 ) </a>
             </li>
-            <li><a href="mediaquery-2.html"> 연습 3 ( 반응형 웹사이트 ) </a>
+            <li><a href="mediaquery.html"> 연습 3 ( 반응형 웹사이트 ) </a>
             </li>
           </ol>
-          <ol>
+          <div id="article">
             <!--본문 제목-->
-            <h2>CSS란 무엇인가?</h2>
+            <h2>CSS란 무엇인가? ( 800px 이하이면 표가 사라집니다 )</h2>
+            <!-- 본문 -->
           <p>
               종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로[1],
               HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
@@ -52,6 +97,8 @@ gtag('config', 'G-C6EBZNRGFE');
               현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다.
               또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 있다.
          </p>
+       </div>
+     </div>
               <!-- 댓글 -->
               <p>
                 <div id="disqus_thread"></div>
@@ -90,6 +137,5 @@ gtag('config', 'G-C6EBZNRGFE');
                   </script>
                   <!--End of Tawk.to Script-->
               </p>
-          </ol>
       </body>
 <html>
